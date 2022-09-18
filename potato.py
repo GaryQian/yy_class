@@ -28,6 +28,14 @@ def isEven(n):
     else:
         return True
 
+def isEven(n):
+    if n >= 2:
+        return isEven(n-2)
+    elif n == 1: 
+        return False  
+    else:
+        return True
+
 def isOdd(n):
     if n >= 2:
         return isOdd(n-2)
